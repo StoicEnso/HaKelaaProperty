@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Investment Opportunity | Ha. Kelaa, Maldives</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #0066cc;
+            --secondary-color: #00a896;
+            --accent-color: #f4a261;
+            --dark-blue: #0a2463;
+            --light-blue: #e6f2ff;
+            --white: #ffffff;
+            --light-gray: #f8f9fa;
+            --medium-gray: #e9ecef;
+            --dark-gray: #343a40;
+            --success-green: #28a745;
+            --warning-yellow: #ffc107;
+            --danger-red: #dc3545;
+            --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--dark-gray);
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1573843981267-be1999ff37cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--white);
+        }
+        
+        .hero-content {
+            max-width: 800px;
+        }
+        
+        .hero-title {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .btn-group {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+            cursor: pointer;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: var(--white);
+        }
+        
+        .btn-secondary {
+            background-color: var(--secondary-color);
+            color: var(--white);
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--box-shadow);
+        }
+        
+        /* Section Styling */
+        section {
+            padding: 5rem 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--dark-blue);
+            font-size: 2.5rem;
+        }
+        
+        /* Location Section */
+        .location-section {
+            background-color: var(--white);
+        }
+        
+        .location-description {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 3rem;
+            font-size: 1.2rem;
+        }
+        
+        .news-box {
+            background-color: var(--light-blue);
+            padding: 2rem;
+            border-radius: 10px;
+            margin-bottom: 3rem;
+        }
+        
+        .news-title {
+            text-align: center;
+            color: var(--dark-blue);
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+        }
+        
+        .news-content {
+            font-size: 1.1rem;
+        }
+        
+        /* Features Section */
+        .features {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+        
+        .feature-card {
+            flex: 1;
+            min-width: 300px;
+            background-color: var(--light-gray);
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        
+        .feature-title {
+            color: var(--dark-blue);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        
+        /* Investment Section */
+        .investment-section {
+            background-color: var(--light-gray);
+        }
+        
+        .investment-description {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 3rem;
+            font-size: 1.2rem;
+        }
+        
+        .details-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .details-card {
+            flex: 1;
+            min-width: 300px;
+            background-color: var(--white);
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: var(--box-shadow);
+        }
+        
+        .details-title {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+            text-align: center;
+        }
+        
+        .details-list {
+            list-style-type: none;
+        }
+        
+        .details-list li {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        
+        .details-list li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+        }
+        
+        /* Stats Section */
+        .stats-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .stat-card {
+            flex: 1;
+            min-width: 200px;
+            text-align: center;
+        }
+        
+        .stat-value {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+        
+        .stat-label {
+            font-size: 1.2rem;
+            color: var(--dark-gray);
+        }
+        
+        /* Comparative Analysis Section */
+        .comparative-section {
+            background-color: var(--white);
+        }
+        
+        .comparative-description {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 3rem;
+            font-size: 1.2rem;
+        }
+        
+        .table-container {
+            overflow-x: auto;
+        }
+        
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 2rem;
+        }
+        
+        .comparison-table th,
+        .comparison-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--medium-gray);
+        }
+        
+        .comparison-table th {
+            background-color: var(--primary-color);
+            color: var(--white);
+        }
+        
+        .comparison-table tr:nth-child(even) {
+            background-color: var(--light-gray);
+        }
+        
+        .highlight {
+            background-color: var(--light-blue) !important;
+        }
+        
+        /* Partnership Lease Card */
+        .partnership-lease-card {
+            background-color: var(--white);
+            border: 2px solid var(--primary-color);
+            border-radius: 10px;
+            padding: 2rem;
+            margin: 3rem 0;
+            box-shadow: var(--box-shadow);
+        }
+        
+        .partnership-lease-title {
+            color: var(--dark-blue);
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+            border-bottom: 2px solid var(--light-blue);
+            padding-bottom: 1rem;
+        }
+        
+        .partnership-lease-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .partnership-detail {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1.5rem;
+        }
+        
+        .partnership-detail-icon {
+            color: var(--primary-color);
+            font-size: 1.5rem;
+            margin-right: 1rem;
+            min-width: 24px;
+        }
+        
+        .partnership-detail-content h4 {
+            margin-bottom: 0.5rem;
+            color: var(--dark-blue);
+        }
+        
+        .partnership-detail-content p {
+            color: var(--dark-gray);
+        }
+        
+        .partnership-highlight {
+            background-color: var(--light-blue);
+            padding: 1.5rem;
+            border-radius: 5px;
+            margin-top: 2rem;
+            text-align: center;
+        }
+        
+        .partnership-highlight p {
+            color: var(--dark-blue);
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+        
+        /* Negotiation Highlight */
+        .negotiation-highlight {
+            background-color: rgba(244, 162, 97, 0.1);
+            border-left: 4px solid var(--accent-color);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 10px 10px 0;
+        }
+        
+        .negotiation-highlight h3 {
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        
+        .negotiation-highlight p {
+            margin-bottom: 0;
+            font-size: 1.1rem;
+        }
+        
+        /* Popup */
+        .popup {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: var(--white);
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: var(--box-shadow);
+            max-width: 350px;
+            z-index: 1000;
+        }
+        
+        .popup-close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: none;
+            border: none;
+            font-size: 1.2rem;
+            cursor: pointer;
+        }
+        
+        .popup-title {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+        
+        .popup-content {
+            margin-bottom: 1rem;
+        }
+        
+        .popup-cta {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: var(--white);
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark-blue);
+            color: var(--white);
+            padding: 3rem 0;
+            text-align: center;
+        }
+        
+        .footer-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .footer-content p {
+            margin-bottom: 1rem;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        
+        .social-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: var(--white);
+            border-radius: 50%;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .social-link:hover {
+            background-color: var(--primary-color);
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .btn-group {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .details-container,
+            .stats-container {
+                flex-direction: column;
+            }
+            
+            .partnership-lease-details {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        /* Document Download Section */
+        .documents-section {
+            background-color: var(--light-gray);
+            padding: 3rem 0;
+        }
+        
+        .documents-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .document-card {
+            background-color: var(--white);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--box-shadow);
+            transition: var(--transition);
+        }
+        
+        .document-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .document-icon {
+            background-color: var(--primary-color);
+            color: var(--white);
+            font-size: 2rem;
+            padding: 1.5rem;
+            text-align: center;
+        }
+        
+        .document-content {
+            padding: 1.5rem;
+        }
+        
+        .document-content h4 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: var(--dark-blue);
+        }
+        
+        .document-content p {
+            color: var(--dark-gray);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+        
+        .download-btn {
+            display: inline-block;
+            background-color: var(--light-gray);
+            color: var(--primary-color);
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+        
+        .download-btn:hover {
+            background-color: var(--medium-gray);
+        }
+        
+        .download-btn i {
+            margin-right: 0.5rem;
+        }
+        
+        .download-all-btn {
+            display: block;
+            text-align: center;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Premium Investment Opportunity in Ha. Kelaa, Maldives</h1>
+            <p class="hero-subtitle">Secure a strategic foothold in the Maldives' next tourism frontier with a long-term lease (50-99 years) on prime guest house development land</p>
+            <div class="btn-group">
+                <a href="#contact" class="btn btn-primary">Request Investment Package</a>
+                <a href="#comparative" class="btn btn-secondary">View Market Comparison</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Location Section -->
+    <section class="location-section">
+        <div class="container">
+            <h2 class="section-title">Strategic Location</h2>
+            <p class="location-description">This exceptional 4,326.73 sq. ft. property is perfectly positioned in Ha. Kelaa, the northernmost atoll of the Maldives, just 3-4 minutes walking distance from pristine beaches. The timing for this investment opportunity couldn't be better.</p>
+            
+            <div class="news-box">
+                <h3 class="news-title">Breaking Development News</h3>
+                <div class="news-content">
+                    <p>On March 29, 2025, the President of Maldives issued Presidential Decree No. 07/2025, officially designating 325.5 hectares of Kelaa lagoon for tourism development, including two major luxury resorts with 200 beds each.</p>
+                    <p>This government initiative positions Ha. Kelaa as the next major tourism destination in the Maldives, creating an unprecedented opportunity for early investors.</p>
+                </div>
+            </div>
+            
+            <div class="features">
+                <div class="feature-card">
+                    <div class="feature-icon">🏝️</div>
+                    <h3 class="feature-title">Prime Location</h3>
+                    <p>Just 3-4 minutes walk to pristine beaches in the emerging northern tourism hub</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📈</div>
+                    <h3 class="feature-title">Growth Potential</h3>
+                    <p>Positioned to benefit from two upcoming luxury resort developments</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🔑</div>
+                    <h3 class="feature-title">Flexible Terms</h3>
+                    <p>Long-term lease options (50-99 years) with customizable payment structures</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Investment Section -->
+    <section class="investment-section">
+        <div class="container">
+            <h2 class="section-title">Investment Opportunity</h2>
+            <p class="investment-description">This property represents a rare opportunity to establish a guest house operation in an emerging tourism destination at the early stage of its development cycle. With the government's commitment to developing the northern atolls and the imminent construction of two major resorts in the immediate vicinity, the value appreciation potential is substantial.</p>
+            
+            <!-- Partnership Lease Card -->
+            <div class="partnership-lease-card">
+                <h3 class="partnership-lease-title">50-Year Strategic Partnership Lease</h3>
+                <div class="partnership-lease-details">
+                    <div class="partnership-detail">
+                        <div class="partnership-detail-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <div class="partnership-detail-content">
+                            <h4>Duration</h4>
+                            <p>50 years</p>
+                        </div>
+                    </div>
+                    
+                    <div class="partnership-detail">
+                        <div class="partnership-detail-icon">
+                            <i class="fas fa-money-bill-wave"></i>
+                        </div>
+                        <div class="partnership-detail-content">
+                            <h4>Upfront</h4>
+                            <p>USD 150,000 (one-time)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="partnership-detail">
+                        <div class="partnership-detail-icon">
+                            <i class="fas fa-hand-holding-usd"></i>
+                        </div>
+                        <div class="partnership-detail-content">
+                            <h4>Base Rent</h4>
+                            <p>USD 6,000 per year (↑ CPI) — lower than any other lease option</p>
+                        </div>
+                    </div>
+                    
+                    <div class="partnership-detail">
+                        <div class="partnership-detail-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="partnership-detail-content">
+                            <h4>Revenue Share</h4>
+                            <p>6% of gross annual revenue</p>
+                        </div>
+                    </div>
+                    
+                    <div class="partnership-detail">
+                        <div class="partnership-detail-icon">
+                            <i class="fas fa-sync-alt"></i>
+                        </div>
+                        <div class="partnership-detail-content">
+                            <h4>10-Year Review</h4>
+                            <p>Terms adjustable by mutual agreement (± 2 pp collar)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="partnership-detail">
+                        <div class="partnership-detail-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="partnership-detail-content">
+                            <h4>Extension</h4>
+                            <p>Automatic 25-year option upon meeting agreed milestones</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="partnership-highlight">
+                    <p>This partnership lease offers the lowest base rent of any lease option, with flexible terms designed for long-term success</p>
+                </div>
+            </div>
+            
+            <!-- Negotiation Highlight -->
+            <div class="negotiation-highlight">
+                <h3>Open to Offers and Negotiations</h3>
+                <p>We welcome discussions on lease terms, payment structures, and development timelines. Our goal is to establish a mutually beneficial partnership that maximizes the potential of this prime location. Contact us to discuss your specific requirements and investment vision.</p>
+            </div>
+            
+            <div class="details-container">
+                <div class="details-card">
+                    <h3 class="details-title">Property Details</h3>
+                    <ul class="details-list">
+                        <li><strong>Location:</strong> Ha. Kelaa, Maldives</li>
+                        <li><strong>Land Size:</strong> 4,326.73 sq. ft.</li>
+                        <li><strong>Beach Access:</strong> 3-4 minute walk</li>
+                        <li><strong>Current Lease:</strong> 25 years, renewable</li>
+                        <li><strong>Proposed Lease:</strong> 50-99 years (negotiable)</li>
+                        <li><strong>Zoning:</strong> Approved for guest house/tourism development</li>
+                    </ul>
+                </div>
+                
+                <div class="details-card">
+                    <h3 class="details-title">Development Potential</h3>
+                    <ul class="details-list">
+                        <li><strong>Concept:</strong> Boutique guest house with 10-15 rooms</li>
+                        <li><strong>Target Market:</strong> Budget-conscious travelers, adventure tourists, extended-stay visitors</li>
+                        <li><strong>Amenities:</strong> Restaurant, tour services, water sports facilities</li>
+                        <li><strong>Estimated ROI:</strong> 17.5% annually (based on comparable properties)</li>
+                        <li><strong>Payback Period:</strong> 5-7 years (accelerated by resort developments)</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="stats-container">
+                <div class="stat-card">
+                    <div class="stat-value">$5B</div>
+                    <div class="stat-label">Maldives Tourism Target for 2025</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-value">2M+</div>
+                    <div class="stat-label">Annual Tourists to Maldives</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-value">400+</div>
+                    <div class="stat-label">New Resort Beds in Kelaa</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-value">17.5%</div>
+                    <div class="stat-label">Estimated Annual ROI</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Comparative Analysis Section -->
+    <section class="comparative-section" id="comparative">
+        <div class="container">
+            <h2 class="section-title">Comparative Market Analysis</h2>
+            <p class="comparative-description">Our comprehensive analysis shows that Ha. Kelaa offers superior investment potential compared to other Maldives locations, particularly given the recent government initiatives and upcoming resort developments.</p>
+            
+            <h3>Location Comparison</h3>
+            <div class="table-container">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Factor</th>
+                            <th>Ha. Kelaa Property</th>
+                            <th>Central Atolls</th>
+                            <th>Southern Atolls</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="highlight">
+                            <td>Land Cost/Lease Rates</td>
+                            <td>Lower (MVR 8,300/month)</td>
+                            <td>High</td>
+                            <td>Medium</td>
+                        </tr>
+                        <tr>
+                            <td>Competition</td>
+                            <td>Low (emerging market)</td>
+                            <td>Very High</td>
+                            <td>Medium</td>
+                        </tr>
+                        <tr class="highlight">
+                            <td>Tourism Development</td>
+                            <td>Two major resorts planned</td>
+                            <td>Saturated</td>
+                            <td>Growing</td>
+                        </tr>
+                        <tr>
+                            <td>Growth Potential</td>
+                            <td>Excellent</td>
+                            <td>Limited</td>
+                            <td>Good</td>
+                        </tr>
+                        <tr class="highlight">
+                            <td>Authenticity</td>
+                            <td>High (undeveloped)</td>
+                            <td>Low</td>
+                            <td>Medium</td>
+                        </tr>
+                        <tr>
+                            <td>Government Focus</td>
+                            <td>High (new priority area)</td>
+                            <td>Established</td>
+                            <td>Medium</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <h3>Investment Timing Advantage</h3>
+            <div class="details-card">
+                <p>Ha. Kelaa represents a rare "ground floor" opportunity in Maldives tourism development:</p>
+                <ol>
+                    <li><strong>Early Stage Development:</strong> Unlike central atolls where tourism is mature, Ha. Kelaa is at the beginning of its development cycle</li>
+                    <li><strong>Value Appreciation:</strong> Property values likely to increase significantly once resort development begins</li>
+                    <li><strong>Infrastructure Improvements:</strong> Government commitment to developing northern atolls will bring transportation and infrastructure upgrades</li>
+                    <li><strong>First-Mover Advantage:</strong> Opportunity to establish the premier guest house in the area before competition increases</li>
+                </ol>
+            </div>
+            
+            <h3>Guest House Performance Metrics</h3>
+            <div class="table-container">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Metric</th>
+                            <th>New Development Areas</th>
+                            <th>Established Areas</th>
+                            <th>Ha. Kelaa Potential</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Average Occupancy</td>
+                            <td>55-65%</td>
+                            <td>70-85%</td>
+                            <td>60-70% (Year 1-2)</td>
+                        </tr>
+                        <tr class="highlight">
+                            <td>ADR (USD)</td>
+                            <td>$80-120</td>
+                            <td>$150-250</td>
+                            <td>$100-150</td>
+                        </tr>
+                        <tr>
+                            <td>RevPAR (USD)</td>
+                            <td>$44-78</td>
+                            <td>$105-212</td>
+                            <td>$60-105</td>
+                        </tr>
+                        <tr class="highlight">
+                            <td>Seasonality Impact</td>
+                            <td>Higher</td>
+                            <td>Lower</td>
+                            <td>Moderate</td>
+                        </tr>
+                        <tr>
+                            <td>Growth Trajectory</td>
+                            <td>Steep</td>
+                            <td>Flat</td>
+                            <td>Very Steep</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <h3>Risk Assessment</h3>
+            <div class="table-container">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Risk Factor</th>
+                            <th>Ha. Kelaa</th>
+                            <th>Central Atolls</th>
+                            <th>Southern Atolls</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Market Saturation</td>
+                            <td>Very Low</td>
+                            <td>High</td>
+                            <td>Medium</td>
+                        </tr>
+                        <tr>
+                            <td>Development Delays</td>
+                            <td>Medium</td>
+                            <td>Low</td>
+                            <td>Medium</td>
+                        </tr>
+                        <tr class="highlight">
+                            <td>Return on Investment</td>
+                            <td>High Potential</td>
+                            <td>Moderate</td>
+                            <td>Moderate-High</td>
+                        </tr>
+                        <tr>
+                            <td>Operational Challenges</td>
+                            <td>Medium</td>
+                            <td>Low</td>
+                            <td>Medium</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Documents Section -->
+    <section class="documents-section">
+        <div class="container">
+            <h2 class="section-title">Investment Documents</h2>
+            <p class="comparative-description">Download our comprehensive investment materials to learn more about this unique opportunity.</p>
+            
+            <div class="documents-grid">
+                <div class="document-card">
+                    <div class="document-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <div class="document-content">
+                        <h4>Property Profile</h4>
+                        <p>Detailed information about the property, location, and strategic value</p>
+                        <a href="documents/property_profile.md" class="download-btn" download><i class="fas fa-download"></i> Download</a>
+                    </div>
+                </div>
+                
+                <div class="document-card">
+                    <div class="document-icon">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <div class="document-content">
+                        <h4>Lease Proposal Options</h4>
+                        <p>Detailed lease terms, payment structures, and conditions</p>
+                        <a href="documents/lease_proposal_options.md" class="download-btn" download><i class="fas fa-download"></i> Download</a>
+                    </div>
+                </div>
+                
+                <div class="document-card">
+                    <div class="document-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <div class="document-content">
+                        <h4>Comparative Analysis</h4>
+                        <p>Market comparison with other Maldives locations</p>
+                        <a href="documents/comparative_analysis.md" class="download-btn" download><i class="fas fa-download"></i> Download</a>
+                    </div>
+                </div>
+                
+                <div class="document-card">
+                    <div class="document-icon">
+                        <i class="fas fa-file-powerpoint"></i>
+                    </div>
+                    <div class="document-content">
+                        <h4>Investment Presentation</h4>
+                        <p>Comprehensive overview of the investment opportunity</p>
+                        <a href="documents/investment_presentation.md" class="download-btn" download><i class="fas fa-download"></i> Download</a>
+                    </div>
+                </div>
+                
+                <div class="document-card">
+                    <div class="document-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="document-content">
+                        <h4>Potential Investors</h4>
+                        <p>List of potential investor profiles for partnership</p>
+                        <a href="documents/potential_investors.md" class="download-btn" download><i class="fas fa-download"></i> Download</a>
+                    </div>
+                </div>
+                
+                <div class="document-card">
+                    <div class="document-icon">
+                        <i class="fas fa-file-signature"></i>
+                    </div>
+                    <div class="document-content">
+                        <h4>Lease Evaluation Guide</h4>
+                        <p>Framework for assessing and finalizing lease agreements</p>
+                        <a href="documents/lease_evaluation_guide.md" class="download-btn" download><i class="fas fa-download"></i> Download</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="download-all-btn">
+                <a href="documents/all_documents.zip" class="btn btn-primary" download><i class="fas fa-download"></i> Download Complete Package</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <p class="comparative-description">Interested in this investment opportunity? Get in touch with us today.</p>
+            
+            <div class="details-card">
+                <form id="contact-form">
+                    <div style="margin-bottom: 1.5rem;">
+                        <label for="name" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Full Name</label>
+                        <input type="text" id="name" style="width: 100%; padding: 0.8rem; border: 1px solid #ced4da; border-radius: 5px;" required>
+                    </div>
+                    
+                    <div style="margin-bottom: 1.5rem;">
+                        <label for="email" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Email Address</label>
+                        <input type="email" id="email" style="width: 100%; padding: 0.8rem; border: 1px solid #ced4da; border-radius: 5px;" required>
+                    </div>
+                    
+                    <div style="margin-bottom: 1.5rem;">
+                        <label for="phone" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Phone Number</label>
+                        <input type="tel" id="phone" style="width: 100%; padding: 0.8rem; border: 1px solid #ced4da; border-radius: 5px;">
+                    </div>
+                    
+                    <div style="margin-bottom: 1.5rem;">
+                        <label for="company" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Company/Organization</label>
+                        <input type="text" id="company" style="width: 100%; padding: 0.8rem; border: 1px solid #ced4da; border-radius: 5px;">
+                    </div>
+                    
+                    <div style="margin-bottom: 1.5rem;">
+                        <label for="message" style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Message</label>
+                        <textarea id="message" style="width: 100%; padding: 0.8rem; border: 1px solid #ced4da; border-radius: 5px; min-height: 150px;" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary" style="border: none;">Submit Inquiry</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>For more information about this investment opportunity, please contact us at:</p>
+                <p><strong>Email:</strong> WhiteCowrie.co.pvt.lt@gmail.com</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+                <p>&copy; 2025 Ha. Kelaa Property Investment. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Popup -->
+    <div class="popup" id="popup">
+        <button class="popup-close" id="popup-close">&times;</button>
+        <div class="popup-title">Limited Time Opportunity</div>
+        <div class="popup-content">
+            <p>The Maldives government has just announced two major resort developments in Ha. Kelaa lagoon. Property values are expected to increase significantly once construction begins.</p>
+            <p>Request our investment package now to learn more about this rare opportunity.</p>
+        </div>
+        <a href="#contact" class="popup-cta">Get Investment Package</a>
+    </div>
+    
+    <!-- JavaScript -->
+    <script>
+        // Popup
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(function() {
+                document.getElementById('popup').style.display = 'block';
+            }, 5000);
+            
+            document.getElementById('popup-close').addEventListener('click', function() {
+                document.getElementById('popup').style.display = 'none';
+            });
+        });
+        
+        // Form Submission
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your inquiry! We will contact you shortly.');
+            this.reset();
+        });
+        
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
