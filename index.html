@@ -373,6 +373,49 @@
             font-size: 1.1rem;
         }
         
+        /* Lease Options Section */
+        .lease-options-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        
+        .lease-option-card {
+            flex: 1;
+            min-width: 300px;
+            background-color: var(--white);
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: var(--box-shadow);
+        }
+        
+        .lease-option-title {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            border-bottom: 2px solid var(--light-blue);
+            padding-bottom: 0.5rem;
+        }
+        
+        .lease-option-list {
+            list-style-type: none;
+        }
+        
+        .lease-option-list li {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        
+        .lease-option-list li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+        }
+        
         /* Popup */
         .popup {
             position: fixed;
@@ -473,7 +516,8 @@
             }
             
             .details-container,
-            .stats-container {
+            .stats-container,
+            .lease-options-container {
                 flex-direction: column;
             }
             
@@ -611,6 +655,44 @@
         <div class="container">
             <h2 class="section-title">Investment Opportunity</h2>
             <p class="investment-description">This property represents a rare opportunity to establish a guest house operation in an emerging tourism destination at the early stage of its development cycle. With the government's commitment to developing the northern atolls and the imminent construction of two major resorts in the immediate vicinity, the value appreciation potential is substantial.</p>
+            
+            <p class="investment-description">We offer flexible lease structures to accommodate different investor profiles and development timelines:</p>
+            
+            <!-- Lease Options Section -->
+            <div class="lease-options-container">
+                <div class="lease-option-card">
+                    <h3 class="lease-option-title">50-Year Premium Lease</h3>
+                    <ul class="lease-option-list">
+                        <li><strong>Duration:</strong> 50 years</li>
+                        <li><strong>Total Value:</strong> USD 400,000</li>
+                        <li><strong>Upfront:</strong> 60% (USD 240,000)</li>
+                        <li><strong>Balance:</strong> 40% over 5 years</li>
+                        <li><strong>Extension:</strong> Option for additional 25 years</li>
+                    </ul>
+                </div>
+                
+                <div class="lease-option-card">
+                    <h3 class="lease-option-title">75-Year Development Lease</h3>
+                    <ul class="lease-option-list">
+                        <li><strong>Duration:</strong> 75 years</li>
+                        <li><strong>Total Value:</strong> USD 535,000</li>
+                        <li><strong>Upfront:</strong> 25% (USD 133,750)</li>
+                        <li><strong>Balance:</strong> 75% over 25 years</li>
+                        <li><strong>Extension:</strong> Right of first refusal</li>
+                    </ul>
+                </div>
+                
+                <div class="lease-option-card">
+                    <h3 class="lease-option-title">99-Year Legacy Lease</h3>
+                    <ul class="lease-option-list">
+                        <li><strong>Duration:</strong> 99 years</li>
+                        <li><strong>Total Value:</strong> USD 707,000</li>
+                        <li><strong>Upfront:</strong> 20% (USD 141,400)</li>
+                        <li><strong>Balance:</strong> 80% over 30 years</li>
+                        <li><strong>Transfer Rights:</strong> Full assignment rights</li>
+                    </ul>
+                </div>
+            </div>
             
             <!-- Partnership Lease Card -->
             <div class="partnership-lease-card">
